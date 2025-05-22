@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserisci Voto</title>
+</head>
+<body>
+    <h1>Inserisci Voto</h1>
+    <form method="POST">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="materia">Materia:</label><br>
+        <input type="text" id="materia" name="materia" required><br><br>
+        
+        <label for="voto">Voto:</label><br>
+        <input type="number" id="voto" name="voto" min="0" max="10" required><br><br>
+        
+        <button type="submit">Salva</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Torna al Registro</a>
+</body>
+</html>
